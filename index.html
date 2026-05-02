@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>ListingFixer — Sell Your Stuff Faster</title>
+  <meta
+    name="description"
+    content="Paste your marketplace listing and instantly get a better title, stronger description, photo checklist, price tips, and buyer reply scripts."
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#" class="brand">
+        <span class="brand-mark">LF</span>
+        <span>ListingFixer</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#tool">Tool</a>
+        <a href="#how">How it works</a>
+        <a href="#premium">Premium Pack</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="pulse-dot"></span>
+          Free marketplace listing optimizer
+        </div>
+
+        <h1>Sell your stuff faster with a better listing.</h1>
+
+        <p class="hero-subtitle">
+          Paste your Facebook Marketplace, eBay, Etsy, Craigslist, Poshmark, or Mercari listing and get a stronger title,
+          better description, photo checklist, price tips, and buyer reply scripts.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#tool" class="button primary">Fix My Listing</a>
+          <a href="#premium" class="button secondary">Get the Seller Pack</a>
+        </div>
+
+        <div class="trust-row">
+          <div>
+            <strong>No login</strong>
+            <span>Use instantly</span>
+          </div>
+          <div>
+            <strong>Free tool</strong>
+            <span>Improve your listing</span>
+          </div>
+          <div>
+            <strong>Seller scripts</strong>
+            <span>Reply with confidence</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="mini-window">
+          <div class="window-dots">
+            <span></span><span></span><span></span>
+          </div>
+
+          <div class="mini-label">Before</div>
+          <div class="bad-listing">
+            <strong>grey couch</strong>
+            <p>Good couch. Moving. Pickup only.</p>
+          </div>
+
+          <div class="arrow-line">
+            <span></span>
+          </div>
+
+          <div class="mini-label success">After</div>
+          <div class="good-listing">
+            <strong>Comfortable Gray Couch — Good Condition, Pickup Available</strong>
+            <p>
+              Selling a comfortable gray couch in good condition. Great for an apartment,
+              living room, or guest space. Available because I’m moving.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tool" class="section tool-section">
+      <div class="section-heading">
+        <p class="eyebrow centered">Instant listing upgrade</p>
+        <h2>Paste your listing. Get better copy.</h2>
+        <p>
+          ListingFixer helps you turn vague marketplace posts into clear, buyer-friendly listings with better titles,
+          descriptions, photo ideas, pricing tips, and message scripts.
+        </p>
+      </div>
+
+      <div class="tool-grid">
+        <form id="listingForm" class="card form-card">
+          <div class="form-header">
+            <div>
+              <h3>Your Listing</h3>
+              <p>Fill in what you know. More detail creates a better result.</p>
+            </div>
+            <span class="badge">Free</span>
+          </div>
+
+          <div class="form-group">
+            <label for="item">What are you selling? <span>*</span></label>
+            <input
+              id="item"
+              name="item"
+              type="text"
+              placeholder="Example: gray couch, iPhone 13, handmade candle"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="title">Current title</label>
+            <input
+              id="title"
+              name="title"
+              type="text"
+              placeholder="Example: grey couch"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="description">Current description <span>*</span></label>
+            <textarea
+              id="description"
+              name="description"
+              rows="6"
+              placeholder="Paste your current listing description..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="condition">Condition</label>
+              <select id="condition" name="condition">
+                <option value="New">New</option>
+                <option value="Like New">Like New</option>
+                <option value="Good" selected>Good</option>
+                <option value="Fair">Fair</option>
+                <option value="Needs Repair">Needs Repair</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="price">Price</label>
+              <input
+                id="price"
+                name="price"
+                type="text"
+                placeholder="$150"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="platform">Platform</label>
+              <select id="platform" name="platform">
+                <option value="Facebook Marketplace">Facebook Marketplace</option>
+                <option value="eBay">eBay</option>
+                <option value="Etsy">Etsy</option>
+                <option value="Craigslist">Craigslist</option>
+                <option value="Poshmark">Poshmark</option>
+                <option value="Mercari">Mercari</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="urgency">Selling reason</label>
+              <select id="urgency" name="urgency">
+                <option value="No rush">No rush</option>
+                <option value="Moving">Moving</option>
+                <option value="Decluttering">Decluttering</option>
+                <option value="Need sold quickly">Need sold quickly</option>
+                <option value="Upgrading">Upgrading</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="details">Extra details</label>
+            <textarea
+              id="details"
+              name="details"
+              rows="4"
+              placeholder="Brand, size, color, dimensions, flaws, pickup/shipping info, accessories included..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="button primary full-width">
+            Generate Better Listing
+          </button>
+
+          <p class="privacy-note">
+            Your text stays in your browser. This version does not send your listing anywhere.
+          </p>
+        </form>
+
+        <aside class="card results-card">
+          <div id="emptyState" class="empty-state">
+            <div class="empty-icon">✦</div>
+            <h3>Your improved listing will appear here</h3>
+            <p>
+              Add your item details and generate a polished listing with a title,
+              description, checklist, and buyer scripts.
+            </p>
+          </div>
+
+          <div id="results" class="results hidden">
+            <div class="results-top">
+              <div>
+                <p class="eyebrow">Listing score</p>
+                <h3 id="scoreText">84 / 100</h3>
+              </div>
+              <div class="score-ring">
+                <span id="scoreRingText">84</span>
+              </div>
+            </div>
+
+            <div class="result-block">
+              <div class="result-title-row">
+                <h4>Better title</h4>
+                <button class="copy-btn" data-copy-target="betterTitle">Copy</button>
+              </div>
+              <p id="betterTitle" class="output-box"></p>
+            </div>
+
+            <div class="result-block">
+              <div class="result-title-row">
+                <h4>Better description</h4>
+                <button class="copy-btn" data-copy-target="betterDescription">Copy</button>
+              </div>
+              <div id="betterDescription" class="output-box multiline"></div>
+            </div>
+
+            <div class="result-block">
+              <h4>Photo checklist</h4>
+              <ul id="photoChecklist" class="check-list"></ul>
+            </div>
+
+            <div class="result-block">
+              <h4>Price tips</h4>
+              <ul id="priceTips" class="check-list"></ul>
+            </div>
+
+            <div class="result-block">
+              <h4>Buyer reply scripts</h4>
+              <div class="script-grid">
+                <div>
+                  <strong>Interested buyer</strong>
+                  <p id="scriptInterested"></p>
+                </div>
+                <div>
+                  <strong>Low offer</strong>
+                  <p id="scriptLowOffer"></p>
+                </div>
+                <div>
+                  <strong>Pickup/shipping</strong>
+                  <p id="scriptPickup"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="result-actions">
+              <button id="printBtn" class="button secondary full-width">Print / Save as PDF</button>
+              <button id="resetBtn" class="button ghost full-width">Start Over</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="how" class="section how-section">
+      <div class="section-heading">
+        <p class="eyebrow centered">How it works</p>
+        <h2>Simple upgrades that make listings easier to buy from.</h2>
+      </div>
+
+      <div class="steps">
+        <div class="step-card">
+          <span>01</span>
+          <h3>Clarify the item</h3>
+          <p>
+            The app turns vague listings into clear titles with condition, item type, and buyer-friendly keywords.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <span>02</span>
+          <h3>Reduce buyer questions</h3>
+          <p>
+            It helps add details buyers usually ask for, like condition, price, reason for selling, pickup, and shipping.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <span>03</span>
+          <h3>Reply with confidence</h3>
+          <p>
+            It gives you scripts for interested buyers, lowball offers, pickup questions, and smoother negotiations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="premium" class="section premium-section">
+      <div class="premium-card">
+        <div class="premium-copy">
+          <p class="eyebrow">Premium seller pack</p>
+          <h2>Want the full copy/paste toolkit?</h2>
+          <p>
+            The free tool helps improve one listing at a time. The Marketplace Seller Pack gives you a complete set of
+            templates, buyer scripts, pricing checklists, photo checklists, and safety reminders you can reuse whenever
+            you sell something online.
+          </p>
+
+          <ul class="premium-list">
+            <li>25+ buyer reply templates</li>
+            <li>10 listing templates</li>
+            <li>Photo checklist by category</li>
+            <li>Pricing research checklist</li>
+            <li>Lowball negotiation scripts</li>
+            <li>Pickup and safety checklist</li>
+          </ul>
+        </div>
+
+        <div class="price-card">
+          <p class="small-label">Instant download</p>
+          <h3>Marketplace Seller Pack</h3>
+          <div class="price">$5</div>
+          <p>
+            Get the templates, scripts, and checklists in one simple seller pack. Use it for Facebook Marketplace, eBay,
+            Etsy, Craigslist, Poshmark, Mercari, and local selling groups.
+          </p>
+
+          <a
+            href="https://www.buymeacoffee.com/cloudandclipboard/e/534426"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button primary full-width"
+          >
+            Get the Seller Pack
+          </a>
+
+          <p class="tiny-note">
+            Secure checkout through Buy Me a Coffee.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>ListingFixer — Free listing optimization tool.</p>
+    <p class="footer-small">Built to help you write clearer listings, respond faster, and sell with less hassle.</p>
+  </footer>
+
+  <div id="toast" class="toast">Copied to clipboard</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
