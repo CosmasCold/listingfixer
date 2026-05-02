@@ -371,14 +371,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             Etsy, Craigslist, Poshmark, Mercari, and local selling groups.
           </p>
 
-          <a
-            href="https://www.buymeacoffee.com/cloudandclipboard/e/534426"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button primary full-width"
-          >
-            Get the Seller Pack
-          </a>
+         <a
+  href="https://www.buymeacoffee.com/cloudandclipboard/e/534426"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="button primary full-width"
+  onclick="gtag('event', 'seller_pack_click', {
+    event_category: 'conversion',
+    event_label: 'premium_section'
+  });"
+>
+  Get the Seller Pack
+</a>
 
           <p class="tiny-note">
             Secure checkout through Buy Me a Coffee.
